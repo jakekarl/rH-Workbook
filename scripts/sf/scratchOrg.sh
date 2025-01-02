@@ -45,8 +45,8 @@ scratchOrgName="$project-$branch"
 echo_wrapper "Install Latest NPM Packages"
 npm ci
 
-echo_wrapper "Install SF Plugin"
-printf 'y\n' | sf plugins install texei-sfdx-plugin
+# echo_wrapper "Install SF Plugin"
+# printf 'y\n' | sf plugins install texei-sfdx-plugin
 
 # echo_wrapper "Create Scratch Org From Snapshot" 
 # sf org create scratch -f ./config/project-snapshot-def.json -a "$scratchOrgName" --name "$scratchOrgName" -y 14 -w 60 -d
